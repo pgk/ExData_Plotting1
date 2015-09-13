@@ -3,7 +3,7 @@ data <- read.csv("./subset.csv")
 data$DateTime <- strptime(paste(data$Date, data$Time, sep=" "), format="%d/%m/%Y %H:%M:%S")
 
 with(data, {
-  plot(DateTime, Global_active_power, type="n",
+  plot(DateTime, Sub_metering_1, type="n",
        ylab = "Energy Sub Metering",
        xlab = "",
        main = "")
